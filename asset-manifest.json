@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/planet-hunters/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/planet-hunters/static/js/main.24009594.chunk.js",
+    "main.js.map": "/planet-hunters/static/js/main.24009594.chunk.js.map",
+    "runtime-main.js": "/planet-hunters/static/js/runtime-main.7cc231e8.js",
+    "runtime-main.js.map": "/planet-hunters/static/js/runtime-main.7cc231e8.js.map",
+    "static/js/2.7003b177.chunk.js": "/planet-hunters/static/js/2.7003b177.chunk.js",
+    "static/js/2.7003b177.chunk.js.map": "/planet-hunters/static/js/2.7003b177.chunk.js.map",
+    "static/js/3.10da3ed9.chunk.js": "/planet-hunters/static/js/3.10da3ed9.chunk.js",
+    "static/js/3.10da3ed9.chunk.js.map": "/planet-hunters/static/js/3.10da3ed9.chunk.js.map",
+    "index.html": "/planet-hunters/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/planet-hunters/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7003b177.chunk.js.LICENSE.txt": "/planet-hunters/static/js/2.7003b177.chunk.js.LICENSE.txt",
+    "static/media/noplanet.8e0a4801.jpg": "/planet-hunters/static/media/noplanet.8e0a4801.jpg",
+    "static/media/planet.af38ab4c.jpg": "/planet-hunters/static/media/planet.af38ab4c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cc231e8.js",
+    "static/js/2.7003b177.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.24009594.chunk.js"
+  ]
+}
