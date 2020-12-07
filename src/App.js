@@ -109,12 +109,12 @@ const App = () => {
           <p>This is Group 27's dashboard that visualizes the data and prediction of exoplanets through a developed neural network.</p>
           <p>This project utilized AWS SageMaker and S3 Buckets to store exoplanet training data, test data, and the development of the models.</p>
           <p>Over the course of this year, we learned to utilize various features of AWS, tensorflow, and various packages such as pandas and sklearn</p>
-          <Divider style={{ background: 'white', marginTop: '25px', padding: '2px' }} />
+          <Divider style={{ background: 'white', marginTop: '25px', padding: '1px' }} />
           <h1>Generating the Data</h1>
           <p>This web app utilizes a traditional Tech Stack of React JS and Flask. The Backend is responsible for randomly generating 1598
           test values, communicating these values to the front end, and storing the model that is used to predict
             whether an exoplanet exists or not.</p>
-          <Divider style={{ background: 'white', marginTop: '25px', padding: '2px' }} />
+          <Divider style={{ background: 'white', marginTop: '25px', padding: '1px' }} />
           <h1>Try it out!</h1>
           <p>Press the button below to generate a new set of data and see if you get lucky enought to find an arbitray exoplanet</p>
           <div className="generateValues">
