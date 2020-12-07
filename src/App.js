@@ -10,6 +10,7 @@ const drawerWidth = 340;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    height: '100vh',
   },
   drawer: {
     width: drawerWidth,
