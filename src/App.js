@@ -61,7 +61,7 @@ const App = () => {
 
   const [values, setValues] = useState([]);
   const [labels, setLabels] = useState([]);
-  const [isPlanet, setIsPlanet] = useState(false);
+  const [isPlanet, setIsPlanet] = useState(true);
 
   useEffect(() => {
     fetch("/light-flux-values").then(res => res.json()).then(data => setValues(data.values));
@@ -71,6 +71,17 @@ const App = () => {
 
   const generateValues = () => {
     fetch("/light-flux-values").then(res => res.json()).then(data => setValues(data.values));
+
+    fetch('/predict-values', {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({ values: values })
+    }).then(res => res.json()).then(data => {
+      setIsPlanet(data.predict)
+    });
   }
 
   const state = {
@@ -98,12 +109,12 @@ const App = () => {
           <p>This is Group 27's dashboard that visualizes the data and prediction of exoplanets through a developed neural network.</p>
           <p>This project utilized AWS SageMaker and S3 Buckets to store exoplanet training data, test data, and the development of the models.</p>
           <p>Over the course of this year, we learned to utilize various features of AWS, tensorflow, and various packages such as pandas and sklearn</p>
-          <Divider style={{ background: 'white', marginTop: '50px', padding: '2px' }} />
+          <Divider style={{ background: 'white', marginTop: '25px', padding: '2px' }} />
           <h1>Generating the Data</h1>
           <p>This web app utilizes a traditional Tech Stack of React JS and Flask. The Backend is responsible for randomly generating 1598
           test values, communicating these values to the front end, and storing the model that is used to predict
             whether an exoplanet exists or not.</p>
-          <Divider style={{ background: 'white', marginTop: '50px', padding: '2px' }} />
+          <Divider style={{ background: 'white', marginTop: '25px', padding: '2px' }} />
           <h1>Try it out!</h1>
           <p>Press the button below to generate a new set of data and see if you get lucky enought to find an arbitray exoplanet</p>
           <div className="generateValues">
@@ -133,8 +144,8 @@ const App = () => {
 
         {isPlanet ? (
           <div className={classes.predictPlanet}>
-            <p>Congrats! You found an exoplanet!!!</p>
-            <img alt="planet" src={planet} width="100px" />
+            <h2>Congrats! You found an exoplanet!!!</h2>
+            <img alt="planet" src={planet} width="300px" />
           </div>
         ) : (
             <div className={classes.predictPlanet}>
