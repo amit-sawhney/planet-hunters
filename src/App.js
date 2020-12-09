@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: '#475C7A'
+    backgroundColor: '#242637'
   },
   drawerContent: {
     color: 'white',
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
   },
   generateDataBtn: {
-    backgroundColor: '#5395F8',
+    backgroundColor: '#841e3f',
     color: 'white',
     padding: "0 24px 0 24px",
     marginTop: '10px',
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "2px",
     boxShadow: "0 2px 5px 0 rgba(0,0,0,.15)",
     "&:hover": {
-      backgroundColor: '#84b3fa'
+      backgroundColor: '#941e3f'
     }
   },
   chart: {
@@ -89,7 +89,7 @@ const App = () => {
     labels: labels,
     datasets: [
       {
-        backgroundColor: 'rgba(75,192,192,1)',
+        backgroundColor: '#841e3f',
         data: values
       }
     ]
